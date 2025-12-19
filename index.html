@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Subramanyam's Portfolio</title>
+   <link rel="icon" href="./image/icon.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <!-- CSS -->
+   <link rel="stylesheet" href="./style.css">
+
+   <script src="/_sdk/element_sdk.js"></script>
+
+   <style>
+      @view-transition {
+         navigation: auto;
+      }
+   </style>
+   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+   <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+</head>
+
+<body>
+   <div class="main-wrapper">
+
+      <!-- Masthead -->
+      <header class="masthead"><button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"> <i
+               class="fas fa-moon"></i> </button>
+         <h1 class="masthead-title" id="portfolio-name-header">THE SUBHU CHRONICLE</h1>
+         <p class="masthead-subtitle" id="portfolio-tagline-header">Professional Portfolio</p>
+         <p class="date-line">Odisha,Balesore | Sunday,November 17,2002</p>
+      </header><!-- Navigation -->
+      <nav class="nav-bar">
+         <ul>
+            <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-page="skills">Skills</a></li>
+            <li><a href="#" class="nav-link" data-page="experience">Experience</a></li>
+            <li><a href="#" class="nav-link" data-page="achievements">Achievements</a></li>
+            <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+         </ul>
+      </nav>
+
+      <!-- Home Page -->
+      <main id="home" class="page active">
+         <article class="hero-section">
+            <div class="profile-photo">
+               <img src="./image/profile.jpg" alt="img Loading...">
+               <audio id="profile-audio" loop>
+                  <source src="./Audio/ProfileSong.mp3" type="audio/mpeg">
+               </audio>
+            </div>
+
+            <div class="hero-content">
+               <p class="byline">Profile</p>
+               <h2 class="headline" id="portfolio-name-main">SUBRAMANYAM PANDA</h2>
+               <p class="subheadline" id="portfolio-tagline-main">Software Developer &amp; Prompt Engineer</p>
+               <p class="lead-text" id="portfolio-about-lead">A curious and self-driven software professional from a
+                  middle-class background, shaped by discipline, independent learning, and a strong problem-solving
+                  mindset. I am known for my ability to think analytically, adapt quickly, and grow in fast-evolving
+                  technical environments. AI plays a central role in my workflow, where strong prompt-engineering skills
+                  help me break down complex problems, speed up development, and achieve accurate, efficient results. By
+                  combining logical thinking with AI-assisted execution, I focus on building practical solutions that
+                  create real value through ownership, consistency, and continuous improvement.</p><a
+                  href="https://drive.google.com/file/d/1AFAD59-e8MibtwsuT1UzRvRcdbO5M3qx/view?usp=share_link"
+                  target="_blank" rel="noopener noreferrer" class="btn-primary"> <i class="fas fa-download"></i> View
+                  Resume </a>
+            </div>
+         </article>
+         <div class="newspaper-columns">
+
+            <!-- LEFT COLUMN -->
+            <div class="no-break">
+               <h3 class="section-headline">About Me</h3>
+               <p class="body-text" id="portfolio-about-main">
+                  I come from a village background, which keeps me grounded-even when my to-do list tries to scare me. I love exploring new places and cuisines, constantly juggling work, family, friends, and my finances like a daily survival game.
+               </p>
+               <p class="body-text">
+                  Somewhere between deadlines, dreams, and food cravings, I’m learning, growing, and enjoying the chaos.
+               </p>
+
+               <!-- HOBBIES -->
+               <h3 class="section-headline section-sub">Hobbies</h3>
+               <ul class="hobby-list">
+                  <li>📘 Reading tech and self-growth content, and exploring new technology devices</li>
+                  <li>🤖 Exploring AI and automation tools</li>
+                  <li>🎯 Continuously improving productivity systems</li>
+                  <li>🎧 Listening to calm and lo-fi music while cycling</li>
+                  <li>🍳 Cooking and experimenting with new recipes</li>
+                  <li>👥 Spending quality time with friends</li>
+               </ul>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="no-break">
+               <h3 class="section-headline">Education</h3>
+               <div class="education-item">
+                  <h4>B.Tech (CSE)</h4>
+                  <p>C.V. Raman Global University</p>
+                  <span class="edu-meta">82.50% • 2024</span>
+               </div>
+               <div class="education-item">
+                  <h4>CHSE</h4>
+                  <p>Sagar Science Higher Secondary School</p>
+                  <span class="edu-meta">74.83% • 2020</span>
+               </div>
+               <div class="education-item">
+                  <h4>BSE</h4>
+                  <p>Khantapara High School</p>
+                  <span class="edu-meta">72.66% • 2018</span>
+               </div>
+            </div>
+
+         </div>
+
+      </main>
+
+      <!-- Skills Page -->
+      <main id="skills" class="page">
+         <article class="skills-newspaper">
+            <h2 class="headline">SKILLS &amp; EXPERTISE</h2>
+            <p class="subheadline">A Comprehensive Overview of Technical Proficiencies</p>
+            <div class="newspaper-columns">
+               <div class="skill-column">
+                  <h3 class="skill-category-title">Programming Languages</h3>
+                  <ul class="skill-list">
+                     <li>
+                        <span class="skill-name">Java</span>
+                        <div class="skill-tube" data-level="85">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">85%</span>
+                        </div>
+                     </li>
+
+                     <li>
+                        <span class="skill-name">C#</span>
+                        <div class="skill-tube" data-level="75">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">75%</span>
+                        </div>
+                     </li>
+
+                     <li>
+                        <span class="skill-name">JSON</span>
+                        <div class="skill-tube" data-level="56">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">56%</span>
+                        </div>
+                     </li>
+
+                     <li>
+                        <span class="skill-name">XML</span>
+                        <div class="skill-tube" data-level="26">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">26%</span>
+                        </div>
+                     </li>
+
+                     <li>
+                        <span class="skill-name">SQL</span>
+                        <div class="skill-tube" data-level="95">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">95%</span>
+                        </div>
+                     </li>
+
+                     <li>
+                        <span class="skill-name">JDBC</span>
+                        <div class="skill-tube" data-level="52">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">52%</span>
+                        </div>
+                     </li>
+
+                     <li>
+                        <span class="skill-name">Selenium C# API Automation</span>
+                        <div class="skill-tube" data-level="89">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">89%</span>
+                        </div>
+                     </li>
+                     <li>
+                        <span class="skill-name">Selenium C# Excel Automation</span>
+                        <div class="skill-tube" data-level="89">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">89%</span>
+                        </div>
+                     </li>
+                     <li>
+                        <span class="skill-name">Selenium Java UI Automation</span>
+                        <div class="skill-tube" data-level="85">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">85%</span>
+                        </div>
+                     </li>
+                  </ul>
+
+               </div>
+               <div class="skill-column">
+                  <h3 class="skill-category-title">Web Technologies</h3>
+                  <ul class="skill-list">
+                     <li>
+                        <span class="skill-name">HTML</span>
+                        <div class="skill-tube" data-level="84">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">84%</span>
+                        </div>
+                     </li>
+
+                     <li>
+                        <span class="skill-name">CSS</span>
+                        <div class="skill-tube" data-level="69">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">69%</span>
+                        </div>
+                     </li>
+
+                     <li>
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-tube" data-level="31">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">31%</span>
+                        </div>
+                     </li>
+                  </ul>
+
+               </div>
+               <div class="skill-column">
+                  <h3 class="skill-category-title">Applications</h3>
+                  <ul class="skill-list">
+                     <li>
+                        <span class="skill-name">Parasoft</span>
+                        <div class="skill-tube" data-level="75">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">75%</span>
+                        </div>
+                     </li>
+                     <li>
+                        <span class="skill-name">Git</span>
+                        <div class="skill-tube" data-level="85">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">85%</span>
+                        </div>
+                     </li>
+                     <li>
+                        <span class="skill-name">SQL Plus</span>
+                        <div class="skill-tube" data-level="95">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">95%</span>
+                        </div>
+                     </li>
+                     <li>
+                        <span class="skill-name">Microsoft Excel</span>
+                        <div class="skill-tube" data-level="79">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">79%</span>
+                        </div>
+                     </li>
+
+                     <li>
+                        <span class="skill-name">Microsoft Word</span>
+                        <div class="skill-tube" data-level="95">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">95%</span>
+                        </div>
+                     </li>
+                     <li>
+                        <span class="skill-name">Microsoft PowerPoint</span>
+                        <div class="skill-tube" data-level="95">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">95%</span>
+                        </div>
+                     </li>
+                     <li>
+                        <span class="skill-name">Postman & Swagger</span>
+                        <div class="skill-tube" data-level="79">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">79%</span>
+                        </div>
+                     </li>
+                     <li>
+                        <span class="skill-name">Eclipse IDE</span>
+                        <div class="skill-tube" data-level="75">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">75%</span>
+                        </div>
+                     </li>
+
+                     <li>
+                        <span class="skill-name">Visual Studio Code</span>
+                        <div class="skill-tube" data-level="95">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">95%</span>
+                        </div>
+                     </li>
+                     <li>
+                        <span class="skill-name">Microsoft Visual Studio Prof.</span>
+                        <div class="skill-tube" data-level="95">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">95%</span>
+                        </div>
+                     </li>
+
+                     <li>
+                        <span class="skill-name">Microsoft Azure CI/CD Pipeline</span>
+                        <div class="skill-tube" data-level="79">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">79%</span>
+                        </div>
+                     </li>
+
+                     <li>
+                        <span class="skill-name">Beyond Compare</span>
+                        <div class="skill-tube" data-level="93">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">93%</span>
+                        </div>
+                     </li>
+                     <li>
+                        <span class="skill-name">Notepad++</span>
+                        <div class="skill-tube" data-level="89">
+                           <div class="skill-fill"></div>
+                           <span class="skill-tooltip">89%</span>
+                        </div>
+                     </li>
+                  </ul>
+
+               </div>
+            </div>
+            <div class="soft-skills-box">
+               <h3>PROFESSIONAL STRENGTHS</h3>
+               <div class="soft-skills-grid">
+                  <div class="soft-skill-item">
+                     Prompt Engineer
+                  </div>
+                  <div class="soft-skill-item">
+                     Quick Learner
+                  </div>
+                  <div class="soft-skill-item">
+                     Problem Solver
+                  </div>
+                  <div class="soft-skill-item">
+                     Team Player
+                  </div>
+                  <div class="soft-skill-item">
+                     Adaptable
+                  </div>
+                  <div class="soft-skill-item">
+                     Detail-Oriented
+                  </div>
+                  <div class="soft-skill-item">
+                     Innovative & OOB
+                  </div>
+               </div>
+            </div>
+         </article>
+      </main>
+
+      <!-- Experience Page -->
+      <main id="experience" class="page">
+         <h2 class="headline">PROFESSIONAL EXPERIENCE</h2>
+         <p class="subheadline">Career Highlights &amp; Notable Projects</p>
+         <article class="experience-article">
+            <div class="company-header">
+               <h3 class="company-title" id="portfolio-company-main">LTIMINDTREE </h3><span class="tenure"
+                  id="portfolio-experience-main">1.5+ Years</span>
+            </div>
+            <p class="job-title">Software Development Engineer in Test (SDET | Hybrid)</p>
+            <div class="newspaper-columns">
+               <div>
+                  <p class="body-text">I started my professional journey at LTIMindtree as a fresher, completing a
+                         2.5 months of SDET training that strengthened my technical foundation and understanding of corporate
+                          processes. Over the past year, I’ve gained hands-on experience with enterprise tools and real-world
+                           problem-solving through project exposure and knowledge transfer sessions.
+                  </p>
+                  <p class="body-text">I also had the opportunity to design a custom API automation framework, 
+                     collaborate with developers and seniors, and handle critical scenarios, contributing effectively 
+                     to project goals. This experience allowed me to grow continuously, strengthen my skills,
+                      and build strong professional relationships along the way.
+                  </p>
+               </div>
+            </div>
+            <div class="project-box">
+               <h4>PROJECTS</h4>
+               <div class="project-item"><strong>Headeless API & Excel Automation:</strong> Developed a 
+                  framework that generates API payloads from Excel, sends them to configurable endpoints, 
+                  processes large JSON responses, and records results in multiple Excel sheets. Implemented 
+                  a color-coded summary report and automatic email notifications, following modular, readable,
+                   and reusable object-oriented design principles.
+               </div>
+               <div class="project-item"><strong>CI/CD Pipeline Integration:</strong> Integrated the automation framework with a pipeline to 
+                  handle long executions smoothly, allowing easy configuration of Excel sources, endpoints, 
+                  and test run options through a config file. Ensured reliable and efficient test execution for 
+                  multiple environments.
+               </div>
+              <div class="project-item">
+                  <strong class="project-header">Other Projects:</strong>
+                  <ol class="project-list">
+                     <li><span class="project-title">Database Architecture & Optimization:</span> Designed schemas, created stored procedures, and optimized queries with indexing and refinements for better performance.</li>
+                     <li><span class="project-title">CSV to Excel Automation:</span> Processed CSV files, trimmed data, and extracted selected fields into Excel for reporting.</li>
+                     <li><span class="project-title">End-to-End UI & API Flow:</span> Merged existing UI automation (Capgemini scripts) with a custom Headless API automation framework to achieve full end-to-end testing.</li>
+                     <li><span class="project-title">Additional small projects:</span> Various tasks improving data handling, automation flows, and test reporting across multiple modules.</li>
+                  </ol>
+               </div>
+
+
+            </div>
+         </article>
+         <!-- Internships Section -->
+         <section class="internships-section">
+            <h3 class="headline-small">INTERNSHIPS</h3>
+            <p class="subheadline">Hands-on Industry Experience & Projects</p>
+
+            <!-- Internship cards will be injected here -->
+            <div id="internships-container"></div>
+         </section>
+         <!-- Projects Section -->
+         <section class="projects-section">
+            <h3 class="headline-small">PROJECTS</h3>
+            <p class="subheadline">Solving Real-World Problems with Ai</p>
+
+            <div id="projects-container"></div>
+         </section>
+
+      </main>
+
+      <!-- Achievements Page -->
+      <main id="achievements" class="page">
+         <h2 class="headline">ACHIEVEMENTS</h2>
+         <p class="subheadline">Certifications &amp; Professional Accomplishments</p>
+         <div class="achievements-grid">
+            <article class="achievement-box">
+               <div class="achievement-icon"><i class="fas fa-certificate"></i>
+               </div>
+               <h3 class="achievement-headline">Certificate Gallery</h3>
+               <p class="achievement-description">Explore my comprehensive collection of professional certifications,
+                  training completions, and technical credentials earned throughout my career journey.</p><a
+                  href="https://drive.google.com/drive/folders/1398hyj52zl5qbR5U1jo-1bnL-n_L1j2_?usp=sharing"
+                  target="_blank" rel="noopener noreferrer" class="achievement-link"> View All Certificates </a>
+            </article>
+            <article class="achievement-box">
+               <div class="achievement-icon"><i class="fas fa-trophy"></i>
+               </div>
+               <h3 class="achievement-headline">Other Achievements</h3>
+               <p class="achievement-description">View my professional badges, skill endorsements, and
+                  industry-recognized achievements on Credly. A testament to continuous learning and professional
+                  growth.</p><a href="https://www.credly.com/users/subramanyam-panda" target="_blank"
+                  rel="noopener noreferrer" class="achievement-link"> Visit Credly Profile </a>
+            </article>
+         </div>
+      </main>
+
+      <!-- Contact Page -->
+      <main id="contact" class="page">
+         <article class="contact-article">
+            <h2 class="headline">GET IN TOUCH</h2>
+            <p class="contact-intro">Have a project in mind or want to discuss collaboration opportunities? I'd love to
+               hear from you. Fill out the form below and I'll get back to you as soon as possible.</p>
+            <form action="https://formspree.io/f/maygyavb" method="POST">
+               <div class="form-group"><label for="name" class="form-label">Name *</label> <input type="text" id="name"
+                     name="Name" class="form-input" required autocomplete="off">
+               </div>
+               <div class="form-group"><label for="purpose" class="form-label">Purpose *</label> <input type="text"
+                     id="purpose" name="Purpose" class="form-input" required autocomplete="off">
+               </div>
+               <div class="form-group"><label for="email" class="form-label">Email Address *</label> <input type="email"
+                     id="email" name="Email id" class="form-input" required autocomplete="off">
+               </div>
+               <div class="form-group"><label for="phone" class="form-label">Phone Number</label> <input type="tel"
+                     id="phone" name="Phone no." class="form-input" autocomplete="off">
+               </div>
+               <div class="form-group"><label for="message" class="form-label">Message *</label> <textarea id="message"
+                     name="Message" class="form-textarea" required autocomplete="off"></textarea>
+               </div><button type="submit" class="submit-btn"><span>Send Message</span></button>
+            </form>
+         </article>
+      </main>
+
+      <!-- Footer -->
+      <footer class="newspaper-footer">
+         <div class="social-links"><a href="https://www.linkedin.com/in/subramanyam-panda-441409218" target="_blank"
+               rel="noopener noreferrer" aria-label="LinkedIn"> <i class="fa-brands fa-linkedin"></i> </a> <a
+               href="mailto:chimtu17@gmail.com" aria-label="Email"> <i class="fa-solid fa-envelope"></i> </a> <a
+               href="https://instagram.com/subhu_?igshid=ZGUzMzM3NWJiOQ==" target="_blank" rel="noopener noreferrer"
+               aria-label="Instagram"> <i class="fa-brands fa-instagram"></i> </a> <a
+               href="https://www.facebook.com/subramanyam.panda?mibextid=ZbWKwL" target="_blank"
+               rel="noopener noreferrer" aria-label="Facebook"> <i class="fa-brands fa-facebook"></i> </a> <a
+               href="https://github.com/chimtu222" target="_blank" rel="noopener noreferrer" aria-label="GitHub"> <i
+                  class="fa-brands fa-github"></i> </a>
+         </div>
+         <div class="copyright">
+            © 2025 Subramanyam Panda. All Rights Reserved.
+         </div>
+      </footer>
+   </div>
+   <!-- Floating Support Bot -->
+   <div id="support-bot">
+      <img src="./image/bot.gif" alt="Waving Bot" />
+   </div>
+
+
+   <!-- Chat Window -->
+   <div id="support-chat">
+      <div class="chat-header">
+         <span>Support Assistant</span>
+         <button id="chat-close">✖</button>
+      </div>
+
+      <div id="chat-body"></div>
+
+      <div id="chat-options"></div>
+
+      <div class="chat-input">
+         <input type="text" id="chat-input-text" placeholder="Ask something..." disabled />
+         <button id="chat-send">➤</button>
+      </div>
+   </div>
+
+   <!--JS -->
+   <script src="./script.js"></script>
+</body>
+
+</html>

@@ -226,14 +226,22 @@ const projects = [
     //     url: "https://yourportfolio.com"
     // }
 ];
+const researchProjects = [
+    {
+        name: "Load Balancing in Cloud Computing",
+        summary:
+            "Research-focused work on optimizing load balancing strategies in cloud computing. Designed and implemented algorithms for efficient resource allocation, reducing latency and improving system throughput. Conducted extensive simulations, analyzed performance metrics, and validated improvements. Findings were presented at NIT Rourkela and published in IEEE Xplore, highlighting practical applications for scalable cloud systems.",
+        url: "https://ieeexplore.ieee.org/document/10674973"
+    }
+];
 
-function renderProjects() {
-    const container = document.getElementById("projects-container");
+function renderProjects(list, containerId) {
+    const container = document.getElementById(containerId);
     if (!container) return;
 
-    container.innerHTML = "";
+    container.innerHTML = ""; // clears only this container
 
-    projects.forEach(project => {
+    list.forEach(project => {
         const card = document.createElement("article");
         card.className = "experience-article project-card";
 
@@ -244,7 +252,7 @@ function renderProjects() {
 
             <p class="project-link">
                 <a href="${project.url}" target="_blank" rel="noopener noreferrer">
-                    🔗 View Project
+                    🔗 ${containerId === "research-list" ? "Read Paper" : "View Project"}
                 </a>
             </p>
 
@@ -255,7 +263,10 @@ function renderProjects() {
     });
 }
 
-renderProjects();
+renderProjects(projects, "projects-container");
+renderProjects(researchProjects, "research-list");
+
+
 
 /* =========================
    SUPPORT CHATBOT SCRIPT

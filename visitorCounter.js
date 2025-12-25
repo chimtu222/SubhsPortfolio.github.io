@@ -4,7 +4,9 @@ import {
   doc,
   getDoc,
   updateDoc,
-  increment
+  increment,
+  collection,
+  addDoc
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 // 🔹 Firebase config 
@@ -27,8 +29,11 @@ if (!visitEl) {
   console.error("visitCount element not found");
 }
 
-// 🔹 Firestore document
+// 🔹 Firestore document for total visits
 const counterRef = doc(db, "counters", "visitors");
+
+// 🔹 Firestore collection for visit logs
+const visitsCollection = collection(db, "visits");
 
 // 🔹 Prevent refresh counts
 const hasVisited = localStorage.getItem("visited");
@@ -36,12 +41,24 @@ const hasVisited = localStorage.getItem("visited");
 async function updateVisitorCount() {
   try {
     if (!hasVisited) {
+      // Increment total visitor count
       await updateDoc(counterRef, {
         count: increment(1)
       });
+
+      // Log device/browser/OS info anonymously
+      await addDoc(visitsCollection, {
+        device: getDeviceType(),
+        browser: getBrowser(),
+        os: getOS(),
+        timestamp: new Date()
+      });
+
+      // Mark as visited
       localStorage.setItem("visited", "true");
     }
 
+    // Update counter in HTML
     const snapshot = await getDoc(counterRef);
     if (snapshot.exists()) {
       visitEl.innerText = snapshot.data().count;
@@ -53,3 +70,29 @@ async function updateVisitorCount() {
 }
 
 updateVisitorCount();
+
+// 🔹 Helper functions
+function getDeviceType() {
+  return /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)
+    ? "Mobile"
+    : "Desktop";
+}
+
+function getBrowser() {
+  const ua = navigator.userAgent;
+  if (ua.includes("Edg")) return "Edge";
+  if (ua.includes("Chrome")) return "Chrome";
+  if (ua.includes("Firefox")) return "Firefox";
+  if (ua.includes("Safari") && !ua.includes("Chrome")) return "Safari";
+  return "Unknown";
+}
+
+function getOS() {
+  const ua = navigator.userAgent;
+  if (ua.includes("Windows")) return "Windows";
+  if (ua.includes("Mac")) return "macOS";
+  if (ua.includes("Android")) return "Android";
+  if (ua.includes("iPhone") || ua.includes("iPad")) return "iOS";
+  if (ua.includes("Linux")) return "Linux";
+  return "Unknown";
+}

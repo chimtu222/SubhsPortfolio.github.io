@@ -575,14 +575,3 @@ document.querySelectorAll(".nav-link").forEach(link => {
     });
 });
 
-/* Visitors Count */
-fetch("https://api.countapi.xyz/hit/chimtu222-subhu-portfolio/visits")
-    .then(res => res.json())
-    .then(data => {
-        const el = document.getElementById("visitCount");
-        if (el) el.innerText = data.value;
-    })
-    .catch(() => {
-        const el = document.getElementById("visitCount");
-        if (el) el.innerText = "N/A";
-    });

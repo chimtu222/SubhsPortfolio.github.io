@@ -1372,3 +1372,11 @@ body[data-theme="dark"] {
         gap: 0.5rem;
     }
 }
+@media (max-width: 768px) {
+    .lead-text {
+        text-align: left;
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+}
+

@@ -376,6 +376,11 @@ body.dark-mode .profile-photo {
     line-height: 1.6;
     margin-bottom: 1.5rem;
     font-weight: 400;
+
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    overflow-wrap: break-word;
 }
 
 .body-text {

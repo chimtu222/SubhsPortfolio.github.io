@@ -169,7 +169,7 @@ const internships = [
         role: "Student Intern, Remote",
         duration: "23rd Nov 2022 - 18th Jan 2023",
         project: "🔗 Online Grocery Web Application ",
-        projectUrl: "https://chimtu222.github.io/Shopping_website.github.io/",
+        projectUrl: "https://chimtu222.github.io/ResposvShoppingWebsite.github.io/",
         summary:
             "Designed and deployed a responsive shopping website using HTML, CSS, and JavaScript to simulate an online grocery and product store. The application features a product catalog, interactive shopping cart interface, checkout UI elements, user navigation links (Home, Product, About, Blog, Review, Contact), and a clean responsive layout that adapts across devices. Hosted live via GitHub Pages, this project demonstrates frontend development, responsive design principles, and deployment of a production-ready static web application."
     }
@@ -574,4 +574,5 @@ document.querySelectorAll(".nav-link").forEach(link => {
         }
     });
 });
+
 
